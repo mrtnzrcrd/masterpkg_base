@@ -4,7 +4,9 @@
 var session = require('express-session');
 
 var SSStorage = function(db) {
-    this.db = db;
+    this.db = db || {
+        sessions: {}
+    };
 };
 
 SSStorage.prototype.__proto__ = session.Store.prototype;
@@ -19,15 +21,13 @@ SSStorage.prototype.get = function(sid, cb) {
 
 SSStorage.prototype.set = function (sid, data, cb) {
     var self = this;
-    self.db.doTransaction(function() {
-        var session = self.db.sessions[sid];
-        if (!session) {
-            session= new self.db.Session({sid: sid});
-        }
-        session.data=data;
-        session.idUser=data.passport.user;
-        session.date=new Date();
-    }, cb);
+    // console.log("Set session ", sid, data);
+    if(!self.db.sessions){
+        db.setSession(sid, data, cb);
+    } else {
+        self.db.sessions[sid] = data;
+        cb();
+    }
 };
 
 /**
@@ -35,10 +35,13 @@ SSStorage.prototype.set = function (sid, data, cb) {
 */
 SSStorage.prototype.destroy = function (sid, cb) {
     var self = this;
-    self.db.doTransaction(function() {
-        var session = self.db.sessions[sid];
-        if (!session) session.remove();
-    }, cb);
+    // console.log("Destroy session ", sid, data);
+    if(!self.db.sessions){
+        db.destroySession(sid, data, cb);
+    } else {
+        delete self.db.sessions[sid];
+        cb();
+    }
 };
 
 module.exports = SSStorage;

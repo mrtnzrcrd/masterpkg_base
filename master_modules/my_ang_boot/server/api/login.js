@@ -2,7 +2,7 @@
 /* global __mods */
 "use strict";
 
-var db= __mods.db;
+var db = __mods.db;
 var config = __mods.config;
 var path = require('path');
 var passport = require('passport');

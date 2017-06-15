@@ -1,0 +1,52 @@
+.ag-fresh .ag-root{ font-size:13px; border: 1px solid #EBEBEB; }
+.ag-effect .ag-cell, .ag-effect .ag-header-cell{ -webkit-transition: width 0.3s; transition: width 0.3s; }
+.ag-fresh .ag-cell, .ag-fresh .ag-header-cell{
+  -webkit-animation: cellEffect 1s;
+  animation: cellEffect 1s;
+}
+@keyframes cellEffect {
+  from { opacity: 0; }
+  to   { opacity: 1;
+    transition: width 0.5s;
+  }
+}
+@-webkit-keyframes cellEffect {
+  from { opacity: 0; }
+  to   { opacity: 1;
+    -webkit-transition: width 0.5s;
+  }
+}
+.ag-fresh .ag-header-container{ border:0; background-image:none; background-color:#FFF;}
+.ag-fresh .ag-header-group-text{ font-size:14px;}
+.ag-fresh .ag-header-cell{ border-right:1px solid #e7e7e7;}
+.ag-fresh .ag-header-cell-label{ border-left:1px solid #e7e7e7 !important;}
+.ag-fresh .ag-header-container :last-child{ border-right:0 !important;}
+.ag-fresh .ag-header-container .ag-header-cell:first-child .ag-header-cell-label{ border-left:0 !important;}
+.ag-fresh .ag-header-cell-label, .ag-fresh .ag-header-cell-menu-button, .ag-fresh .ag-header-cell-resize{ background-color:#FFF; border-bottom:1px solid #DDDDDD; font-weight:bold; color:inherit; background-image:none;}
+.ag-fresh .ag-header-cell-menu-button{ padding-left:3px; padding-right:3px; border-bottom:0; cursor:pointer; background-color:#FFF;}
+.ag-fresh .ag-header-cell-menu-button:hover{ padding-left:2px; padding-right:2px; border:1px solid #e7e7e7; border-bottom:0;}
+.ag-fresh .ag-header-cell-label, .ag-fresh .ag-header-cell-menu-button, .ag-fresh .ag-header-cell-resize{ border:0;}
+.ag-fresh .ag-body .ag-row-even{ background-color:#f9f9f9;}
+.ag-fresh .ag-body .ag-row-odd{ background-color:#FFFFFF;}
+.ag-fresh .ag-row-selected{ background-color:#d5d5d5 !important;}
+.ag-fresh .ag-row-selected .ag-cell{ border:1px solid #f5f5f5;}
+.ag-fresh .ag-tool-panel-container, .ag-fresh .ag-list-selection{ border-color:#e7e7e7;}
+.ag-fresh .ag-cell{ border:1px solid #e7e7e7; padding:8px;  }
+.ag-fresh .ag-root{border:none;}
+.ag-fresh .ag-header-icon{ color:#676a6c; cursor:pointer;}
+.ag-fresh .ag-header-group:last-child .ag-header-group-cell{ border-right:0;}
+.ag-fresh .ag-filter{ border-color:#BBB; border-radius: 0px 7px 7px 7px;}
+.ag-fresh .ag-filter-checkbox{ left:4px; margin-right:6px;}
+.ag-fresh .ag-filter-value{ margin-left:2px;}
+.ag-filter-filter{ margin:0; width:96%; margin:2%;}
+.ag-filter-list-viewport{ height:auto; padding-bottom:10px; width:auto !important;}
+.ag-fresh .ag-cell-focus{ border:none;}
+.comboSearch .input-group-addon{ border-right:0; background-color:transparent;}
+.comboSearch .form-control{ border-left:0;}
+.comboSearch .glyphicon{ top: 0px;}
+.margIcon, .addItem{ margin-right:5px;}
+.cursorPointer{ cursor:pointer;}
+.actBtn{ margin-right:5px; margin-top:-3px;}
+.listFilters{ margin-bottom: 15px;}
+.icoTrue{ color: #1ab394; margin:0 auto; display:block;}
+.icoFalse{ color: #ed5565; margin:0 auto; display:block;}

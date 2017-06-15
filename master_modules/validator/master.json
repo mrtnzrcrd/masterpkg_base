@@ -1,7 +1,0 @@
-{
-	"name": "validator",
-	"version": "0.0.1",
-	"npmDependencies": {
-		"joi": "^8.0.0"
-	}
-}

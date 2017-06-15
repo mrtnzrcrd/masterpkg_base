@@ -1,0 +1,194 @@
+.w100 input { width: 100px !important;}
+div#wrap { padding-top: 0;}
+.page-header { margin-top: 0;}
+.centerText{ text-align:center;}
+.boxTranslate{overflow-y:scroll; background-color: #e9fbff; margin-top:10px; border:1px solid #b6b6b6; padding:5px; height:345px;}
+.boxTranslate:hover{ background-color:#fee4c5;}
+.txtCopy{ font-style: italic; font-size:11px; margin-left:5px;}
+#myTextTranslate{overflow-y:scroll; width:390px; border:1px solid #b6b6b6; padding:5px; height:345px;}
+.ace_editor { height: 200px; }
+.backgroundOdd { background-color: rgb(245, 245, 245);}
+.backgroundEven { background-color: rgb(218, 218, 218);}
+.colorRed a { color: #ed5565 !important;}
+.colorGreen a { color: #55a958 !important;}
+.lineEditabe{ margin-bottom:5px; -webkit-transition:all 0.2s; transition: all 0.2s;}
+.lineEditabe .control-label{ font-weight: normal;}
+.lineEditabe .floatDate{ float:left !important;}
+.lineEditabe SPAN.floatDate{ padding:7px 3px 0 3px;}
+.lineEditabe.editLine{ padding:15px 10px 15px 10px; border:1px dashed #353535;}
+.conceptInputFilter{ float: right; width:50px !important; padding-left:5px; padding-right:5px;}
+.hoverRow .col-sm-4, .hoverRow .col-sm-2, .hoverRow .col-sm-3{ padding-top:10px;}
+.hoverRow:hover{ background-color: #eeeeee; }
+.missCheckinOff{ display:none; color:#b60000; font-weight: bold; text-align: center; opacity:1 !important; padding:5px 0 5px 0 !important; background-color:#FFFFFF !important;}
+.checkinInactive{ background-color: #f3f3f4; opacity: 0.35; display:block !important;}
+.checkinInactive.brdrTop{ border-top:#565656 1px solid;}
+.checkinInactive.brdrBottom{ border-bottom:#565656 1px solid;}
+.checkinInactive.brdr{ border-left:#565656 1px solid; border-right:#565656 1px solid;}
+
+/* THEME */
+//.ibox-content{ border-top:#e7eaec 3px solid; margin-top:20px;}
+.comboSearch .form-control:focus + .input-group-addon{ border: 1px solid #FF0000 !important;}
+
+// TODO revisiar si se puede eliminar: gestión de imagenes
+canvas{background-color: #f3f3f3;-webkit-box-shadow: 3px 3px 3px 0 #e3e3e3;-moz-box-shadow: 3px 3px 3px 0 #e3e3e3;box-shadow: 3px 3px 3px 0 #e3e3e3;border: 1px solid #c3c3c3;height: 100px;margin: 6px 0 0 6px;}
+
+
+.onclic {
+  width: 30px;
+  margin-right:25px;
+  padding:12px 0;
+  border-style: solid;
+  border-color: #c4c4c4;
+  border-width: 3px;
+  border-radius: 30px;
+  font-size: 0;
+  background-color: #FFF;
+  border-left-color: #00ad9c;
+  animation: rotating 2s 0.25s linear infinite;
+}
+.onclic:after{ content:""; }
+.onclic:hover{ background: white; border-color: #c4c4c4; border-left-color: #00ad9c; cursor:progress;}
+@keyframes rotating {
+  from { transform: rotate(0deg);}
+  to { transform: rotate(360deg);}
+}
+
+#toast-container > .toast-success:before {
+  content: "\f003";
+}
+
+.globalConceptRules input {
+    padding:    6px 6px;
+}
+
+.globalConcept .hr-line-dashed {
+    margin: 5px 0;
+}
+
+.ui-grid-row:nth-child(odd) .ui-grid-cell.greenCell {
+    background-color: rgba(144, 238, 144, 0.26);
+}
+.ui-grid-row:nth-child(odd) .ui-grid-cell.redCell {
+    background-color: rgba(240, 128, 128, 0.26);
+}
+
+.ui-grid-row:nth-child(even) .ui-grid-cell.greenCell {
+    background-color: lightgreen;
+}
+.ui-grid-row:nth-child(even) .ui-grid-cell.redCell {
+    background-color: lightcoral;
+}
+
+.ui-grid-header-cell {
+    background-color: white;
+    border: 1px solid #e7eaec;
+}
+
+.ui-grid-top-panel {
+    background: none;
+    background-color: white;
+    border: none;
+}
+
+.onoffswitch-switch, .btn-home, .nav > li.active, .onoffswitch-label, .fc-state-active, .fc-event, .fc-agenda .fc-event-time, .panel-primary, .landing-page .navbar-default .navbar-nav > li > a:hover, .landing-page .navbar-default .navbar-nav > li > a:focus, .landing-page .btn-primary, .fc-event a, a.list-group-item.active, .panel-primary > .panel-heading, .dropzone, a.list-group-item.active:hover, .landing-page .navbar-default .navbar-nav > .active > a, .landing-page .navbar-default .navbar-nav > .active > a:hover, a.list-group-item.active:focus, .form-control:focus, .landing-page .navy-line, .single-line:focus, .inspinia-notify.alert-info {
+    border-color: #18A19A;
+}
+
+.md-skin .nav .open > a, .md-skin .nav .open > a:hover, .md-skin .nav .open > a:focus, .md-skin .navbar-fixed-top, .md-skin .navbar-static-top, .spin-icon, .fc-event, .onoffswitch-inner:before, .sk-spinner-fading-circle .sk-circle:before, .landing-page li.pricing-title, .fc-agenda .fc-event-time, .jvectormap-zoomin, .sk-spinner-rotating-plane.sk-spinner, .landing-page .testimonials, .jvectormap-zoomout, .open-small-chat, .open-small-chat:hover, .sk-spinner-wordpress.sk-spinner, .landing-page .navbar-default .navbar-brand, .jvectormap-goback, .branding, .navy-bg, .progress-bar, .small-chat-box .content .chat-message.active, .landing-page .btn-primary, .fc-event a, a.list-group-item.active, .panel-primary > .panel-heading, .sk-spinner-cube-grid .sk-cube, .landing-page .social-icon a, a.list-group-item.active:hover, .noUi-connect, .product-price, .sk-spinner-double-bounce .sk-double-bounce1, .sk-spinner-double-bounce .sk-double-bounce2, .sk-spinner-wave div, .sk-spinner-wandering-cubes .sk-cube1, .sk-spinner-wandering-cubes .sk-cube2, .sk-spinner-pulse.sk-spinner, .sk-spinner-chasing-dots .sk-dot1, .landing-page .navy-section, .sk-spinner-chasing-dots .sk-dot2, .sk-spinner-three-bounce div, .sk-spinner-circle .sk-circle:before, a.list-group-item.active:focus, .label-primary, .fc-state-active, .badge-primary, .btn-home, .pace .pace-progress, .navbar-default .landing_link a:hover, body.mini-navbar .nav-header, .navbar-default .special_link a, .top-navigation .navbar-brand, .navbar-toggle {
+    background: #18A19A;
+}
+
+.btn-home:hover, .btn-home:focus, .btn-home:active, .btn-home.active, .open .dropdown-toggle.btn-home, .btn-home:active:focus, .btn-home:active:hover, .btn-home.active:hover, .btn-home.active:focus {
+    background-color: #18A19A !important;
+    border-color: #18A19A !important;
+}
+
+.btn-primary {
+    background-color: #1ab394;
+    border-color: #1ab394;
+    color: #FFFFFF;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.btn-primary.active:focus {
+    background-color: #18A19A;
+    border-color: #18A19A;
+}
+
+.btn-primary.disabled,
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled],
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:active,
+.btn-primary.active[disabled],
+fieldset[disabled] .btn-primary,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary.active {
+    background-color: #6DB134;
+    border-color: #6DB134;
+}
+
+.btn-info {
+    background-color: #6DB134;
+    border-color: #6DB134;
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info,
+.btn-info:active:focus,
+.btn-info:active:hover,
+.btn-info.active:hover,
+.btn-info.active:focus {
+    background-color: #6DB134;
+    border-color: #6DB134;
+}
+
+.btn-info.disabled,
+.btn-info.disabled:hover,
+.btn-info.disabled:focus,
+.btn-info.disabled:active,
+.btn-info.disabled.active,
+.btn-info[disabled],
+.btn-info[disabled]:hover,
+.btn-info[disabled]:focus,
+.btn-info[disabled]:active,
+.btn-info.active[disabled],
+fieldset[disabled] .btn-info,
+fieldset[disabled] .btn-info:hover,
+fieldset[disabled] .btn-info:focus,
+fieldset[disabled] .btn-info:active,
+fieldset[disabled] .btn-info.active {
+    background-color: #6DB134;
+    border-color: #6DB134;
+}
+
+.footer {
+    padding: 0;
+}
+
+.inlineFixedList8 > div {
+    display: inline-block;
+    width: 12.5%;
+}
+
+
+//.wrapper-content {
+//    z-index: 1;
+//    position: relative;
+//}
+

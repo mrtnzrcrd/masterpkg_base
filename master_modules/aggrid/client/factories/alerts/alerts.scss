@@ -1,0 +1,31 @@
+.alerts-container {
+  display: table !important;
+  background-color: rgba(255,255,255,0.8);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+}
+
+.alerts-container .alert {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+alerts-box > div {
+  background-color: #f04124;
+  border-color: #de2d0f;
+  color: #FFFFFF;
+  border-radius: 3px;
+  padding: 10px 20px;
+  position: relative;
+}
+
+alerts-box .alertClose {
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}

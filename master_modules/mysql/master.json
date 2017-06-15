@@ -1,0 +1,6 @@
+{
+  "name": "masterModule_mysql",
+  "npmDependencies": {
+    "mysql": "^2.13.0"
+  }
+}
