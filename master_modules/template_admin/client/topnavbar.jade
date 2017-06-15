@@ -18,7 +18,7 @@ nav.row.navbar.navbar-fixed-top(role='navigation' ng-if="principal.isAuthenticat
          li.dropdown(ng-if="principal.isAuthenticated()", uib-dropdown)
             a.dropdown-toggle(href uib-dropdown-toggle)
                i.fa.fa-user.hidden-xs
-               span {{principal.getIdUser()}}
+               span {{principal.getUserName()}}
                | &nbsp;
                i.fa.fa-angle-down
             ul.dropdown-menu.animated.time02.fadeInDown(role="menu")

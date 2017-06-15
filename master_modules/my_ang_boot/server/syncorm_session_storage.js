@@ -25,7 +25,19 @@ SSStorage.prototype.set = function (sid, data, cb) {
     if(!self.db.sessions){
         db.setSession(sid, data, cb);
     } else {
-        self.db.sessions[sid] = data;
+        var session = self.db.sessions[sid];
+         if(session) {
+             session.data = data;
+             session.idUser = data.passport.user;
+             session.date = new Date();
+         } else {
+             self.db.sessions[sid] = {
+                 data: data,
+                 sid: sid,
+                 idUser: data.passport.user,
+                 date: new Date()
+             };
+         }
         cb();
     }
 };
