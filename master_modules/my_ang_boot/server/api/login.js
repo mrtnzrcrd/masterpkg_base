@@ -13,14 +13,15 @@ module.exports = function(app) {
 	app.post(config.apiPrefix + '/login', login);
 	app.delete(config.apiPrefix + '/login', logout);
 	app.post(config.apiPrefix + '/login/changePassword', changePassword);
-	app.post(config.apiPrefix + '/login/changePassword', changePassword);
 	app.get(config.apiPrefix + '/login/otp/:otp', getOtpInfo);
 	app.put(config.apiPrefix + '/login/otp/:otp', resetPassword);
 	app.post(config.apiPrefix + '/user/:idUser/requestPasswordChange', rememberPassword);
 };
 
 function loginStatus(req, res, next) {
-	if (!req.user) return res.json({});
+	if (!req.user) {
+        return next(new Error("User not logged in"));
+	}
 	res.json(req.user);
 }
 

@@ -8,11 +8,8 @@ var _ = require('lodash');
 
 exports.init = function () {
 
-    if (!global.db) {
-        global.db = {
-            sessions: []
-        }
-    }
+    if (!global.db) global.db = {};
+    if (!global.db.sessions) global.db.sessions = {};
 
     var config = __mods.config;
 
@@ -75,4 +72,19 @@ exports.init = function () {
 
             return done(null, r);
         }));
+
+    passport.changePassword = function(user, oldPassword, newPassword, callback){
+        var user = db.users[user.idUser.toUpperCase()];
+        if (!user) {
+            console.log('User Not Found with username ' + user.username);
+            return callback(new Error('User Not found.'));
+        }
+        if (user.password !== oldPassword) {
+            console.log('Incorrect password');
+            return callback(new Error('Incorrect password.'));
+        }
+        user.password = oldPassword;
+        user.save(user, callback);
+    };
+
 };

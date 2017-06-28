@@ -292,7 +292,7 @@
                 if (toState && toState.url.indexOf("edit") >= 0) {
                     templateFactory.minimalizaSidebar('min');
                 } else {
-                    templateFactory.minimalizaSidebar('max');
+                    // templateFactory.minimalizaSidebar('max');
                 }
             };
             $rootScope.$on('$stateChangeStart', listener);
@@ -311,7 +311,7 @@
             // Minimalize menu when screen is less than 768px
             $(window).bind("load resize", function () {
                 if ($(document).width() < 769) {
-                    $('body').addClass('body-small');
+                    // $('body').addClass('body-small');
                     templateFactory.minimalizaSidebar('min');
                 } else {
                     $('body').removeClass('body-small')

@@ -75,7 +75,7 @@ exports.init = function () {
     var session = require('express-session');
     var morgan = require('morgan');
     var bodyParser = require('body-parser');
-    var SSSession = require('./syncorm_session_storage.js');
+    var SSSession = require('./session_storage.js');
 
     var path = require("path");
     var fs = require("fs");
