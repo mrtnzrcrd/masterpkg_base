@@ -29,7 +29,9 @@ exports.init = function () {
             host: __mods.config.database.host,
             user: __mods.config.database.user,
             password: __mods.config.database.password,
-            database: __mods.config.database.database
+            database: __mods.config.database.database,
+            connectTimeout: __mods.config.database.connectTimeout,
+            acquireTimeout: __mods.config.database.acquireTimeout
         })
     };
 
