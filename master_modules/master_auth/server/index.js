@@ -35,7 +35,7 @@ exports.init = function () {
         }
 
         _.each(user.rights, function (right) {
-            if (right.option.toUpperCase() === "SI") {
+            if (right.option && right.option.toUpperCase() === "SI") {
                 r.rights.push(right.idmodule.toUpperCase() + '.' + right.right.toUpperCase());
             }
         });
