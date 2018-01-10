@@ -19,6 +19,7 @@ var log = function (level, msg, meta) {
 
 exports.init = function () {
 
+
     log("info", "MySQL Module init!");
 
     if (!global.db) global.db = {};
